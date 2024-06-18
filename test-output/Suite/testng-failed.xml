@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Login functionality verification(failed)">
+    <groups>
+      <run>
+        <include name="loginverify"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="selenium.tests.SubmitOrderUsingDataProvider">
+        <methods>
+          <include name="VerifyLoginFunctionality" invocation-numbers="0 1"/>
+          <include name="launchApplication"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- selenium.tests.SubmitOrderUsingDataProvider -->
+    </classes>
+  </test> <!-- Login functionality verification(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All the Tests]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Error validation(failed)" verbose="0">
+    <classes>
+      <class name="selenium.tests.ErrorValidationTest">
+        <methods>
+          <include name="LoginErrorValidation"/>
+          <include name="launchApplication"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- selenium.tests.ErrorValidationTest -->
+    </classes>
+  </test> <!-- Error validation(failed) -->
+</suite> <!-- Failed suite [All the Tests] -->
